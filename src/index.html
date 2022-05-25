@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="/dist/output.css" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="container mx-auto flex justify-center items-center h-screen bg-very-dark-blue">
+  <!-- Rating state start -->
+  
+  <!-- Container -->
+  <div class="flex justify-center flex-col gap-8 max-w-md h-fit bg-dark-blue px-6 py-6 rounded-3xl">
+    <!-- Star icon -->
+    <img src="../images/icon-star.svg" class="w-max rounded-full px-[1rem] py-[1rem] bg-dark-blue-circle border-solid">
+    <!-- Title -->
+    <h1 class="flex text-white text-xl font-medium">How did we do?</h1>
+    <!-- Paragraph -->
+    <p class="text-light-grey">  Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+    <!-- Ratings 1 - 5 -->
+    <div class="flex justify-between gap-x-1 text-medium-grey">
+      <button class="rounded-full px-6 py-4 bg-dark-blue-circle border-solid">1</button>
+      <button class="rounded-full px-6 py-4 bg-dark-blue-circle border-solid">2</button>
+      <button class="rounded-full px-6 py-4 bg-dark-blue-circle border-solid">3</button>
+      <button class="rounded-full px-6 py-4 bg-dark-blue-circle border-solid">4</button>
+      <button class="rounded-full px-6 py-4 bg-dark-blue-circle border-solid">5</button>
+    </div>
+    <!-- Submit Button -->
+    <button class="bg-primary text-white py-2.5 rounded-full">SUBMIT</button>
+
+  </div>
+
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+
+  <!-- You selected Add rating here out of 5 -->
+
+  <!-- Thank you!
+
+  We appreciate you taking the time to give a rating. If you ever need more support, 
+  don’t hesitate to get in touch! -->
+
+  <!-- Thank you state end -->
+
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
