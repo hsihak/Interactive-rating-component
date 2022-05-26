@@ -18,6 +18,9 @@ module.exports = {
         '2xl': '1536px',
         // =>
       }, 
+      maxWidth: {
+        '480px': '480px'
+      },
       colors: {
         'primary': 'hsl(25, 97%, 53%)',
         'white': 'hsl(0, 0%, 100%)',
