@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link href="/dist/output.css" rel="stylesheet">
+  <link href="./dist/output.css" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <script src="/app.js" defer></script>
   <title>Frontend Mentor | Interactive rating component</title>
 
 </head>
@@ -13,23 +13,23 @@
   <!-- Rating state start -->
   
   <!-- Container -->
-  <div class="flex justify-center flex-col gap-7 max-w-sm  sm:max-w-[480px] h-fit bg-dark-blue px-7 py-7 rounded-3xl mx-3">
+  <div id="mainContainer" class="flex justify-center flex-col gap-7 max-w-sm  sm:max-w-md h-fit bg-dark-blue px-7 py-7 rounded-3xl mx-3">
     <!-- Star icon -->
-    <img src="../images/icon-star.svg" class="w-max rounded-full px-[1rem] py-[1rem] bg-dark-blue-circle border-solid">
+    <img id="starIcon" src="../images/icon-star.svg" class="w-max rounded-full px-[1rem] py-[1rem] bg-dark-blue-circle border-solid">
     <!-- Title -->
-    <h1 class="flex text-white text-3xl font-semibold">How did we do?</h1>
+    <h1 id="title" class="flex text-white text-3xl font-semibold">How did we do?</h1>
     <!-- Paragraph -->
-    <p class="text-light-grey text-sm sm:text-lg">  Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+    <p id="para" class="text-light-grey text-sm sm:text-lg">  Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
     <!-- Ratings 1 - 5 -->
-    <div class="flex justify-between gap-x-2 sm:gap-x-0.5 text-medium-grey">
-      <button class="number rounded-full px-4 py-2 sm:px-6 sm:py-4 bg-dark-blue-circle border-solid font-semibold hover:bg-light-grey hover:text-white active:bg-primary">1</button>
-      <button class="number rounded-full px-4 py-2 sm:px-6 sm:py-4 bg-dark-blue-circle border-solid font-semibold hover:bg-light-grey hover:text-white active:bg-primary">2</button>
-      <button class="number rounded-full px-4 py-2 sm:px-6 sm:py-4 bg-dark-blue-circle border-solid font-semibold hover:bg-light-grey hover:text-white active:bg-primary">3</button>
-      <button class="number rounded-full px-4 py-2 sm:px-6 sm:py-4 bg-dark-blue-circle border-solid font-semibold hover:bg-light-grey hover:text-white active:bg-primary">4</button>
-      <button class="number rounded-full px-4 py-2 sm:px-6 sm:py-4 bg-dark-blue-circle border-solid font-semibold hover:bg-light-grey hover:text-white active:bg-primary">5</button>
+    <div id="rating" class="flex justify-between gap-x-2 sm:gap-x-0.5 text-medium-grey">
+      <button class="number rounded-full px-4 py-2 sm:px-6 sm:py-4 bg-dark-blue-circle border-solid font-semibold hover:bg-light-grey hover:text-white active:bg-primary" value="1">1</button>
+      <button class="number rounded-full px-4 py-2 sm:px-6 sm:py-4 bg-dark-blue-circle border-solid font-semibold hover:bg-light-grey hover:text-white" value="2">2</button>
+      <button class="number rounded-full px-4 py-2 sm:px-6 sm:py-4 bg-dark-blue-circle border-solid font-semibold hover:bg-light-grey hover:text-white" value="3">3</button>
+      <button class="number rounded-full px-4 py-2 sm:px-6 sm:py-4 bg-dark-blue-circle border-solid font-semibold hover:bg-light-grey hover:text-white" value="4">4</button>
+      <button class="number rounded-full px-4 py-2 sm:px-6 sm:py-4 bg-dark-blue-circle border-solid font-semibold hover:bg-light-grey hover:text-white" value="5">5</button>
     </div>
     <!-- Submit Button -->
-    <button class="bg-primary text-white text-base tracking-wider font-semibold py-2.5 rounded-full">SUBMIT</button>
+    <button id="submitBtn" class="bg-primary text-white text-base tracking-wider font-semibold py-2.5 rounded-full hover:bg-white hover:text-primary">SUBMIT</button>
 
   </div>
 
